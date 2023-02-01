@@ -1,0 +1,5 @@
+
+
+def megoldas():
+    pass
+#teszt
