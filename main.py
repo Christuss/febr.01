@@ -1,5 +1,5 @@
 
-
-def megoldas():
+#megoldas
+def eredmeny():
     pass
 #teszt
