@@ -15,10 +15,26 @@ def osszegzes(lista):
 def jatekos_vesztett_teszt():
     jatekos = [5, 5, 5, 5, 5]
     gep = [8, 6]
-    print(eredmeny(jatekos, gep))
+    kapott = eredmeny(jatekos, gep)
+    vart = "A gép vesztett!"
+    if kapott == vart:
+        print("A teszt sikeres!")
+    else:
+        print("A teszt megbukott!")
+
+def gep_vesztett_teszt():
+    jatekos = [8, 6]
+    gep = [5, 5, 5, 5, 5]
+    kapott = eredmeny(jatekos, gep)
+    vart = "A gép vesztett!"
+    if kapott == vart:
+        print("A teszt sikeres!")
+    else:
+        print("A teszt megbukott!")
 
 def tesztek():
     jatekos_vesztett_teszt()
+    gep_vesztett_teszt()
 
 
 tesztek()
