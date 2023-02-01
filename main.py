@@ -12,3 +12,13 @@ def osszegzes(lista):
         osszeg += lista[i]
     return osszeg
 # teszt
+def jatekos_vesztett_teszt():
+    jatekos = [5, 5, 5, 5, 5]
+    gep = [8, 6]
+    print(eredmeny(jatekos, gep))
+
+def tesztek():
+    jatekos_vesztett_teszt()
+
+
+tesztek()
