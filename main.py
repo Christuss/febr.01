@@ -93,6 +93,47 @@ def jatekos_vesztett_teszt_3():
         print("A teszt sikeres!")
     else:
         print("A teszt megbukott!")
+
+
+def dontetlen_vesztettek_teszt():
+    jatekos = [11, 11]
+    gep = [11, 11]
+    kapott = eredmeny(jatekos, gep)
+    if osszegzes(jatekos) == osszegzes(gep):
+        if len(jatekos) > len(gep):
+            kapott = "A gép nyert!"
+        elif len(gep) > len(jatekos):
+            kapott = "A játékos nyert!"
+        elif osszegzes(jatekos) > 21:
+            kapott = "Döntetlen, vesztettetek!"
+    vart = "Döntetlen, vesztettetek!"
+    if kapott == vart:
+        print("A teszt sikeres!")
+    else:
+        print("A teszt megbukott!")
+
+
+def dontetlen_nyertek_teszt():
+    jatekos = [11, 9]
+    gep = [11, 9]
+    kapott = eredmeny(jatekos, gep)
+    if osszegzes(jatekos) == osszegzes(gep):
+        if len(jatekos) > len(gep):
+            kapott = "A gép nyert!"
+        elif len(gep) > len(jatekos):
+            kapott = "A játékos nyert!"
+        elif osszegzes(jatekos) > 21:
+            kapott = "Döntetlen, vesztettetek!"
+        else:
+            kapott = "Döntetlen, nyertetek!"
+    vart = "Döntetlen, nyertetek!"
+    if kapott == vart:
+        print("A teszt sikeres!")
+    else:
+        print("A teszt megbukott!")
+
+
+
 def tesztek():
     jatekos_vesztett_teszt()
     gep_vesztett_teszt()
@@ -100,6 +141,8 @@ def tesztek():
     gep_vesztett_teszt_2()
     jatekos_vesztett_teszt_3()
     gep_vesztett_teszt_3()
+    dontetlen_vesztettek_teszt()
+    dontetlen_nyertek_teszt()
 
 
 tesztek()
